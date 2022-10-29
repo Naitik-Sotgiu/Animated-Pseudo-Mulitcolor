@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+body {
+  font-family: 'Cinzel Decorative', sans-serif;
+  background-color: #39268F;
+}
+
+.animation-naitik {
+
+  display: flex;
+}
+
+.li-naitik {
+  list-style: none;
+}
+
+
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 80px;
+  width: 80px;
+  z-index: 100;
+}
+
+.lettre-naitik {
+  position: relative;
+  color: #eae3ff;
+  font-size: 80px;
+  border-radius: 20px;
+
+}
+
+.Titre-final {
+  display: flex;
+  flex-direction: row;
+}
+
+input[type="checkbox"]:checked ~ div {
+  color: re;
+  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  animation: glow 1.5s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
